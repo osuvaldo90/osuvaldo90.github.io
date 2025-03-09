@@ -18,21 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Osuvaldo Ramos
+email: osuvaldo.ramos@gmail.com
+# description: Senior software engineer with 10+ years of experience architecting full-stack solutions across TypeScript, JavaScript, Elixir, and C#. Specialist in developing mission-critical systems that scale, automating complex processes, and leading technical initiatives that drive business outcomes.
+description: >-
+  Software engineer building scalable, elegant solutions with TypeScript, JavaScript, Elixir and C#. Experienced in leading mission-critical systems that drive business growth through automation and technical excellence.
+domain: "osuvaldo90.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+url: "https://osuvaldo90.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: osuvaldo90
+favicon: 👋
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -52,3 +53,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - .vscode
