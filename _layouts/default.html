@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+
+<body>
+  <header class="container">
+    <nav style="display: flex; justify-content: flex-end;">
+      {% comment %} <div>&nbsp;</div> {% endcomment %}
+      <ul>
+        {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
+        {%- for item in sorted_pages -%}
+        {%- if item.nav_title and item.nav_order -%}
+        <li>
+          {%- if page.url == item.url -%}
+          <b>{{ item.nav_title }}</b>
+          {%- else -%}
+          <a href="{{ item.url | relative_url }}">{{ item.nav_title }}</a>
+          {%- endif -%}
+        </li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </nav>
+    <hgroup>
+      <h1>{{ page.header_title }}</h1>
+      {%- if page.header_subtitle -%}
+        <p>{{ page.header_subtitle }}</p>
+      {%- endif -%}
+    </hgroup>
+  </header>
+
+  <main class="container" aria-label="Content">
+    {{ content }}
+  </main>
+
+  {% comment %} {%- include footer.html -%} {% endcomment %}
+</body>
+
+</html>
