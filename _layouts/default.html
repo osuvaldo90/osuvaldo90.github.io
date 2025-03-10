@@ -1,3 +1,5 @@
+{% include variables.html %}
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
@@ -6,28 +8,20 @@
 <body>
   <header class="container">
     <nav style="display: flex; justify-content: flex-end;">
-      {% comment %} <div>&nbsp;</div> {% endcomment %}
       <ul>
-        {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
-        {%- for item in sorted_pages -%}
-        {%- if item.nav_title and item.nav_order -%}
+        {%- for item in main_pages -%}
+        {%- assign title = item.emoji | append: " " | append: item.title %}
         <li>
           {%- if page.url == item.url -%}
-          <b>{{ item.nav_title }}</b>
+          <b>{{ title }}</b>
           {%- else -%}
-          <a href="{{ item.url | relative_url }}">{{ item.nav_title }}</a>
+          <a href="{{ item.url | relative_url }}">{{ title }}</a>
           {%- endif -%}
         </li>
-        {%- endif -%}
         {%- endfor -%}
       </ul>
     </nav>
-    <hgroup>
-      <h1>{{ page.header_title }}</h1>
-      {%- if page.header_subtitle -%}
-        <p>{{ page.header_subtitle }}</p>
-      {%- endif -%}
-    </hgroup>
+    <h1>{{ page.emoji | append: " " | append: page.title }}</h1>
   </header>
 
   <main class="container" aria-label="Content">
