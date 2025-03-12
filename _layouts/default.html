@@ -7,24 +7,39 @@
 
 <body>
   <header class="container">
-    <nav style="display: flex; justify-content: flex-end;">
+    <nav>
       <ul>
-        {%- for item in main_pages -%}
-        {%- assign title = item.emoji | append: " " | append: item.title %}
         <li>
-          {%- if page.url == item.url -%}
-          <b>{{ title }}</b>
-          {%- else -%}
-          <a href="{{ item.url | relative_url }}">{{ title }}</a>
-          {%- endif -%}
+          <hgroup>
+            <h4>Osuvaldo Ramos</h4>
+            <p>Software Engineer</p>
+          </hgroup>
         </li>
-        {%- endfor -%}
+      </ul>
+      <ul>
+        <li>
+          <details class="dropdown">
+            <summary>Menu</summary>
+            <ul>
+              {%- for item in main_pages -%}
+              {%- assign title = item.emoji | append: " " | append: item.title %}
+              <li>
+                {%- if page.url == item.url -%}
+                <b>{{ title }}</b>
+                {%- else -%}
+                <a href="{{ item.url | relative_url }}">{{ title }}</a>
+                {%- endif -%}
+              </li>
+              {%- endfor -%}
+            </ul>
+          </details>
+        </li>
       </ul>
     </nav>
-    <h1>{{ page.emoji | append: " " | append: page.title }}</h1>
   </header>
 
   <main class="container" aria-label="Content">
+    <h1>{{ page.emoji | append: " " | append: page.title }}</h1>
     {{ content }}
   </main>
 
