@@ -58,4 +58,4 @@ exclude:
 collections:
   main_pages:
     output: true
-    permalink: /:name/
+    permalink: /:name
