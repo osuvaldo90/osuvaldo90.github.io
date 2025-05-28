@@ -2,7 +2,7 @@
 layout: default
 emoji: 👋🏼
 title: Hello
-description: TODO
+description: Senior Software Engineer in Philadelphia. Expert in TypeScript, domain-driven design, and scalable back-end systems. 10+ years of experience.
 permalink: /
 nav_order: 0
 ---
