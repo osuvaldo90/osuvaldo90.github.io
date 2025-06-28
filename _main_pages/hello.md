@@ -14,7 +14,7 @@ My name is Osuvaldo Ramos. Call me Osvi. I am a software engineer based in Phila
 {% assign sections = main_pages | where_exp: "p", "p.url != page.url" %}
 {% for section in sections %}
 
-### {{ section.title }}
+## {{ section.title }}
 
 {{ section.excerpt }}
 [{{ section.read_more | default: "Read more" }}]({{ section.url }})
