@@ -7,16 +7,25 @@
 
 <body>
   <header class="container">
-    <nav>
+    {% comment %} <nav>
       <ul>
-        <li>
+        <li> {% endcomment %}
           <hgroup>
             <h4>Osuvaldo Ramos</h4>
             <p>Software Engineer</p>
+            <p>
+              <a href="https://www.linkedin.com/in/osuvaldo/">LinkedIn</a> | <a href="https://github.com/osuvaldo90">GitHub</a> | <a href="mailto:osuvaldo.ramos@gmail.com">Email</a>
+            </p>
           </hgroup>
         </li>
-      </ul>
-      <ul>
+        {% comment %} <li>
+          <a href="https://www.linkedin.com/in/osuvaldo/">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/osuvaldo90">GitHub</a>
+        </li>
+      </ul> {% endcomment %}
+      {% comment %} <ul>
         <li>
           <details class="dropdown">
             <summary>Menu</summary>
@@ -34,8 +43,8 @@
             </ul>
           </details>
         </li>
-      </ul>
-    </nav>
+      </ul> {% endcomment %}
+    {% comment %} </nav> {% endcomment %}
   </header>
 
   <main class="container" aria-label="Content">
