@@ -2,16 +2,16 @@
 layout: default
 emoji: 👋🏼
 title: Hello
-description: Senior Software Engineer in Philadelphia. Expert in TypeScript, domain-driven design, and scalable back-end systems. 10+ years of experience.
+description: Senior Software Engineer | TypeScript, Node.js, PostgreSQL | REST APIs & Backend Systems | 10+ Years
 permalink: /
 nav_order: 0
 ---
 
-My name is Osvi and I'm a software engineer based in Philadelphia, PA.
+I'm a Senior Software Engineer with over 10 years of experience building production backend systems using TypeScript, Node.js, and PostgreSQL. I specialize in designing RESTful APIs, GraphQL schemas, and scalable cloud-native architectures that solve complex business problems.
 
-I take a methodical and collaborative approach to problem solving that involves working with the team to truly understand what we're trying to solve and why before jumping into solutions. I believe this brings clarity and conviction during implementation.
+I'm a Senior Software Engineer with over 10 years of experience building production backend systems using TypeScript, Node.js, and PostgreSQL. I specialize in designing RESTful APIs, GraphQL schemas, and scalable cloud-native architectures that solve complex business problems.
 
-Since 2013, I have worked in various industries including healthcare, real estate, and early childhood education and across many technologies from embedded systems to web applications.
+I started programming at age 12 and never stopped. What drives me is the satisfaction of building software that makes a real difference. Whether that's enabling home ownership for thousands of families, helping educators run childcare programs, or supporting patients with medication adherence.
 
 {% include variables.html %}
 
